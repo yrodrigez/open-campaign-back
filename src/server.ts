@@ -16,7 +16,7 @@ const PORT = 3000;
 app.use(express.static(path.join(__dirname, '..', 'webapp')));
 
 
-app.use('/api', apiControllers);
+app.use('/', apiControllers);
 
 
 app.listen(PORT, async () => {
